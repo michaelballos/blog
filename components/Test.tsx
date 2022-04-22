@@ -1,21 +1,67 @@
-import React, { useRef, useEffect } from 'react';
-import { AppBar, IconButton, Toolbar } from '@mui/material';
+import React, { useState } from 'react';
+import {
+  AppShell, 
+  useMantineTheme, 
+  Header, 
+  Burger,
+} from '@mantine/core';
+import NavLogo from './NavLogo';
 
 const Navbar = () => {
+  const theme = useMantineTheme();
+  const [opened, setOpened] = useState(false); 
+
   return (
-    <AppBar position="static" color="primary">
-      <Toolbar>
-        <IconButton
-          size='large'
-          edge="start"
-          color="inherit"
-          aria-label="menu"
-          sx={{ mr: 2 }}
+    <AppShell
+      fixed
+      header={
+        <Header 
+          sx={(theme) => ({
+            backgroundColor: theme.colors.dark[7],
+            })
+          }
+          height={70} 
+          p='md'
         >
-        </IconButton>
-      </Toolbar>
-    </AppBar>
-  )
+          <div
+            style={{ 
+              display: 'flex', 
+              alignItems: 'center', 
+              height: '100%' 
+            }}
+           >
+             <NavLogo />
+            <div 
+              style={{
+                width: '100%',
+                display: 'flex',
+                justifyContent: 'flex-end', 
+              }}
+            >
+              <Burger
+                opened={opened}
+                onClick={() => setOpened((o) => !o)}
+                size="sm"
+                color={theme.colors.gray[6]}
+                mr="xl"
+              />
+            </div>
+          </div>
+        </Header>
+      } 
+    >
+
+    </AppShell>
+      )
 };
 
 export default Navbar;
+
+function useCallback() {
+  throw new Error('Function not implemented.');
+}
+
+
+function setOpened(arg0: (o: any) => boolean) {
+  throw new Error('Function not implemented.');
+}

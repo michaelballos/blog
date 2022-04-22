@@ -9,6 +9,7 @@ function MyApp({ Component, pageProps }: AppProps) {
     <Head>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.3/gsap.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.3/ScrollTrigger.min.js"></script>
+      <link href="dist/hamburgers.css" rel="stylesheet" />
     </Head>
     </>
   ) 
