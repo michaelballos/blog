@@ -1,11 +1,21 @@
   * {
-    padding: 0;
-    margin: 0;
+      padding: 0;
+      margin: 0;
   }
   
   body,
   html,
   #__next {
-    height: 100vh;
-    width: 100vw;
+      height: 100vh;
+      width: 100vw;
+      padding: 0;
+      margin: 0;
+  }
+  
+  main,
+  nav {
+      height: 100%;
+      width: 100%;
+      padding: 0;
+      margin: 0;
   }

@@ -1,20 +1,29 @@
-import React, { useRef } from 'react';
+import React from 'react';
 import type { NextPage } from 'next'
-import Head from 'next/head'
-import Test from '../components/Test';
+import HomeContent from '../components/HomeContent';
 
 const Home: NextPage = () => {
    return (
-    <div>
-      <Head>
-        <title>Michael Ballos Blog</title>
-        <meta name="Description" content="Web Dev Blog" />
-      </Head>
-      <main>
-        <Test /> 
-      </main>
-    </div>
-  )
+     <div>
+       <HomeContent />       
+       <h1
+         style={{
+            color: 'red',
+         }}
+       >
+         THis is home
+       </h1> 
+        <div
+          style={{
+            position: 'absolute',
+            top: '100vh',
+            color: 'white'
+          }}
+        >
+        YUP
+        </div>
+     </div>
+ )
 }
 
 export default Home
