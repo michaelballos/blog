@@ -20,8 +20,21 @@
       margin: 0;
   }
   
+  #logo:hover {
+      cursor: pointer;
+  }
+  
+  #home:hover,
+  #about:hover,
+  #blog:hover,
+  #contact:hover {
+      text-decoration: none;
+      cursor: default;
+  }
+  
   #home,
   #about,
-  #blog {
+  #blog,
+  #contact {
       color: white;
   }

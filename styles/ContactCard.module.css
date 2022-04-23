@@ -1,0 +1,17 @@
+.card {
+    width: 20rem;
+    background-color: wheat;
+}
+
+.title {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.link {
+    color: white;
+    font-family: 'Raleway', sans-serif;
+}
+
+.button {
+    background-color: black;
+}

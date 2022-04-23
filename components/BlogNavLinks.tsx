@@ -9,14 +9,14 @@ const BlogNavLinks = () => {
       id: ''
     },
     {
+      path: "/blog",
+      name: "BLOG",
+      id: 'blog'
+    },
+    {
       path: "/about",
       name: "ABOUT",
       id: ''
-    },
-    {
-      path: "/blog",
-      name: "-BLOG-",
-      id: 'blog'
     },
     {
       path: "/contact",

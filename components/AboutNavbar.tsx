@@ -28,22 +28,6 @@ const AboutNavbar = () => {
       >
         <AboutNavLinks />
       </div>
-      <div
-        style={{
-          width: '100%',
-          display: 'flex',
-          justifyContent: 'flex-end',
-          alignItems: 'center'
-        }}
-      >
-        <Burger
-          opened={opened}
-          onClick={() => setOpened((o) => !o)}
-          size="sm"
-          color= 'white'
-          mr="xl"
-        />
-      </div>
     </div>
   );
 };

@@ -1,13 +1,11 @@
 import React from 'react';
 import type { NextPage } from 'next'
 import NavLogo from '../components/NavLogo';
-import NavLinksHome from '../components/NavLinksHome';
-import styles from '../styles/HomeBackground.module.css';
+import HomeNavLinks from '../components/HomeNavLinks';
 
 const Home: NextPage = () => {
   return (
     <div>
-      <div className={styles.background} />
     <div
       style={{
         display: 'flex',
@@ -26,7 +24,7 @@ const Home: NextPage = () => {
         gap: '10px',
       }}
     >
-      <NavLinksHome />
+      <HomeNavLinks />
     </div>
     </div>
   )

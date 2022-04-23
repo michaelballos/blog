@@ -1,21 +1,22 @@
 import Link from 'next/link';
 import { Anchor } from '@mantine/core';
 import styles from '../styles/NavLinks.module.css';
-const NavLinksHome = () => {
+const HomeNavLinks = () => {
   const routes = [
     {
       path: "/",
       name: "-HOME-",
       id: 'home'
     },
-    {
-      path: "/about",
-      name: "ABOUT",
-      id: ''
-    },
+    
     {
       path: "/blog",
       name: "BLOG",
+      id: ''
+    },
+    {
+      path: "/about",
+      name: "ABOUT",
       id: ''
     },
     {
@@ -41,4 +42,4 @@ const NavLinksHome = () => {
   )
 }
 
-export default NavLinksHome;
+export default HomeNavLinks;

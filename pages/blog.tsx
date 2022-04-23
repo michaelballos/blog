@@ -1,11 +1,7 @@
 import BlogNavbar from "../components/BlogNavbar";
 
 const Blog = () => {
-  return (
-    <>
-     <BlogNavbar />
-    </>
-  );
+  return <BlogNavbar />
 }
 
 export default Blog;

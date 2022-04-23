@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import NavLogo from './NavLogo';
-import BlogNavLinks from './BlogNavLinks';
+import ContactNavLinks from './ContactNavLinks';
 import { useMantineTheme, Burger } from '@mantine/core';
 
-const BlogNavbar = () => {
+const ContactNavbar = () => {
   const theme = useMantineTheme();
   const [opened, setOpened] = useState(false);
   
@@ -26,10 +26,10 @@ const BlogNavbar = () => {
           paddingLeft: '50px'
         }}
       >
-        <BlogNavLinks />
+        <ContactNavLinks />
       </div>
     </div>
   );
 };
 
-export default BlogNavbar;
+export default ContactNavbar;
