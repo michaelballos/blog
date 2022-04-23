@@ -3,16 +3,16 @@ import { Anchor } from '@mantine/core';
 const NavLinks = () => {
   const routes = [
     {
-      path: "/",
-      name: "Home",
+      path: "/home",
+      name: "HOME",
     },
     {
       path: "/blog",
-      name: "Blog",
+      name: "BLOG",
     },
     {
       path: "/contact",
-      name: "Contact",
+      name: "CONTACT",
     },
   ];
   const links = routes.map((route) => (

@@ -1,18 +1,22 @@
-import { useRef, useEffect } from 'react'
-import { gsap } from 'gsap'
+import { heights } from "@mantine/core/lib/components/Badge/Badge.styles";
+import NavLinks from "./NavLinks";
 
 const HomeContent = () => {
-  const headingRef = useRef()
-
-  useEffect(() => {
-    const element = headingRef.current
-    gsap.fromTo({element} , { rotate: 0 },{
-      duration: 1,
-      x: -100, 
-    })
-  }, [])
-
-  return <h1 ref={headingRef}>Michael</h1>
+  return (
+    <div
+      style={{
+        display: "flex",
+        flexDirection: "column",
+        justifyContent: 'flex-start',
+        paddingTop: '15rem',
+        paddingLeft: '7rem',
+        height: '100vh',
+        gap: '1rem'
+      }}
+    >
+      <NavLinks />
+    </div>
+  ) 
 }
 
 export default HomeContent;

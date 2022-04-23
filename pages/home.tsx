@@ -1,13 +1,16 @@
-import React, { useState } from 'react';
+import React from 'react';
 import type { NextPage } from 'next'
 import HomeContent from '../components/HomeContent';
-import { useMantineTheme, AppShell, Header, Burger } from '@mantine/core';
 import NavbarContent from '../components/NavbarContent';
 
 const Home: NextPage = () => {
   return (
-    
+    <div>
+      <NavbarContent />
+      <HomeContent />       
+    </div>
   )
 }
 
 export default Home
+

@@ -18,7 +18,7 @@ function MyApp({ Component, pageProps }: AppProps) {
         <meta name="Michael Ballos" content="Web Dev Blog" />
         <title>Michael Ballos</title>
       </Head>
-      <AppShell
+      {/* <NavbarContent />       <AppShell
         fixed
         sx={(theme) => ({
           backgroundColor: theme.colors.dark[7],
@@ -59,8 +59,10 @@ function MyApp({ Component, pageProps }: AppProps) {
           </Header>
           }
         > 
+        */}
+
         <Component {...pageProps} />
-      </AppShell>
+        {/* </AppShell> */}
     </>
   );
 }
