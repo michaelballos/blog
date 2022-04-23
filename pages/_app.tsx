@@ -3,6 +3,7 @@ import Head from 'next/head';
 import type { AppProps } from 'next/app';
 import '../styles/Global.css';
 import styles from '../styles/App.module.css';
+import '../styles/App.css';
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <div className={styles.app}>
