@@ -10,7 +10,8 @@ const Home: NextPage = () => {
       style={{
         display: 'flex',
         width: '24px',
-        paddingLeft: '10px',
+        paddingTop: '20px',
+        paddingLeft: '20px',
       }} 
     >
       <NavLogo />

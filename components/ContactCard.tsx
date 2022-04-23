@@ -14,6 +14,7 @@ interface ICard {
 }
 const ContactCard = ({title, href, label}: ICard ) => {
   return (
+    <>
     <Card
       className={styles.card}
     >
@@ -37,6 +38,7 @@ const ContactCard = ({title, href, label}: ICard ) => {
         </Stack>
       </Center>
     </Card>
+  </>
   );
 };
 

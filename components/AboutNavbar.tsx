@@ -1,30 +1,17 @@
-import React, { useState } from 'react';
+import React from 'react';
 import NavLogo from './NavLogo';
 import AboutNavLinks from './AboutNavLinks';
-import { useMantineTheme, Burger } from '@mantine/core';
+import { useMantineTheme } from '@mantine/core';
+import styles from '../styles/Navbar.module.css';
 
 const AboutNavbar = () => {
-  const theme = useMantineTheme();
-  const [opened, setOpened] = useState(false);
-  
   return (
     <div
-      style={{
-        display: 'flex',
-        alignItems: 'center',
-        height: '100%',
-        paddingLeft: '10px',
-        backgroundColor: theme.colors.dark[7]
-      }}
+      className={styles.container}
     >
       <NavLogo />
       <div
-        style={{
-          width: '100%',
-          display: 'flex',
-          gap: '30px',
-          paddingLeft: '50px'
-        }}
+        className={styles.links}
       >
         <AboutNavLinks />
       </div>

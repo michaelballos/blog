@@ -12,12 +12,8 @@
       margin: 0;
   }
   
-  main,
-  nav {
-      height: 100%;
-      width: 100%;
-      padding: 0;
-      margin: 0;
+  #__next {
+      background-color: #1A1B1E;
   }
   
   #logo:hover {
