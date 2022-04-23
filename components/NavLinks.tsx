@@ -1,10 +1,15 @@
 import Link from 'next/link';
 import { Anchor } from '@mantine/core';
+import styles from '../styles/NavLinks.module.css';
 const NavLinks = () => {
   const routes = [
     {
-      path: "/home",
+      path: "/",
       name: "HOME",
+    },
+    {
+      path: "/about",
+      name: "ABOUT",
     },
     {
       path: "/blog",
@@ -15,11 +20,12 @@ const NavLinks = () => {
       name: "CONTACT",
     },
   ];
+
   const links = routes.map((route) => (
     <Link href={route.path} key={route.name}>
       <Anchor
-        style={{
-          color: 'white',
+        className={styles.links}
+        styles={{
           textDecoration: 'none',
         }}
       >{route.name}</Anchor>

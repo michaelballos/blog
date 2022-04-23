@@ -1,12 +1,34 @@
-import React, { useState } from 'react';
+import React from 'react';
 import type { NextPage } from 'next'
-import HomeContent from '../components/HomeContent';
-import { useMantineTheme, AppShell, Header, Burger } from '@mantine/core';
-import NavbarContent from '../components/NavbarContent';
+import NavLogo from '../components/NavLogo';
+import NavLinksHome from '../components/NavLinksHome';
+import styles from '../styles/HomeBackground.module.css';
 
 const Home: NextPage = () => {
   return (
-    
+    <div>
+      <div className={styles.background} />
+    <div
+      style={{
+        display: 'flex',
+        width: '24px',
+        paddingLeft: '10px',
+      }} 
+    >
+      <NavLogo />
+    </div>
+    <div
+      style={{
+        display: 'flex',
+        flexDirection: 'column',
+        paddingTop: '15rem',
+        paddingLeft: '10rem',
+        gap: '10px',
+      }}
+    >
+      <NavLinksHome />
+    </div>
+    </div>
   )
 }
 

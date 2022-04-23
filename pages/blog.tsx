@@ -1,9 +1,9 @@
-import NavbarContent from "../components/NavbarContent";
+import BlogNavbar from "../components/BlogNavbar";
 
 const Blog = () => {
   return (
     <>
-     <NavbarContent />
+     <BlogNavbar />
     </>
   );
 }

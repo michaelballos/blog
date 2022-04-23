@@ -1,5 +1,4 @@
 import { NextPage } from 'next';
-import NavbarContent from '../components/NavbarContent';
 
 const Contact: NextPage = () => {
   return (

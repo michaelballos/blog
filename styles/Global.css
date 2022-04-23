@@ -19,3 +19,9 @@
       padding: 0;
       margin: 0;
   }
+  
+  #home,
+  #about,
+  #blog {
+      color: white;
+  }
