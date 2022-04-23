@@ -1,18 +1,32 @@
-import React, { useRef } from 'react';
+import React from 'react';
 import type { NextPage } from 'next'
-import Head from 'next/head'
-import Test from '../components/Test';
+import NavLogo from '../components/NavLogo';
+import HomeNavLinks from '../components/HomeNavLinks';
 
 const Home: NextPage = () => {
-   return (
+  return (
     <div>
-      <Head>
-        <title>Michael Ballos Blog</title>
-        <meta name="Description" content="Web Dev Blog" />
-      </Head>
-      <main>
-        <Test /> 
-      </main>
+    <div
+      style={{
+        display: 'flex',
+        width: '24px',
+        paddingTop: '20px',
+        paddingLeft: '20px',
+      }} 
+    >
+      <NavLogo />
+    </div>
+    <div
+      style={{
+        display: 'flex',
+        flexDirection: 'column',
+        paddingTop: '15rem',
+        paddingLeft: '10rem',
+        gap: '10px',
+      }}
+    >
+      <HomeNavLinks />
+    </div>
     </div>
   )
 }
