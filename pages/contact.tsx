@@ -1,11 +1,12 @@
 import { NextPage } from 'next';
+import NavbarContent from '../components/NavbarContent';
 
 const Contact: NextPage = () => {
-  return <h1
-    style={{
-      color: 'blue',
-    }}
-      >this is contact page</h1>
+  return (
+    <>
+     <NavbarContent />
+    </>
+  )
 }
 
 export default Contact;

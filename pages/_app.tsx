@@ -18,51 +18,15 @@ function MyApp({ Component, pageProps }: AppProps) {
         <meta name="Michael Ballos" content="Web Dev Blog" />
         <title>Michael Ballos</title>
       </Head>
-      {/* <NavbarContent />       <AppShell
+      <AppShell
         fixed
         sx={(theme) => ({
           backgroundColor: theme.colors.dark[7],
           height: '500vh',
         })}
-        header={
-          <Header
-            height={70}
-            p='md'
-            sx={{
-              backgroundColor: theme.colors.dark[7],
-              border: 'none',
-            }}
-          >
-           <div
-            style={{
-            display: 'flex',
-             }}
-            >
-            <NavbarContent />
-            <div
-              style={{
-                width: '100%',
-                display: 'flex',
-                justifyContent: 'flex-end',
-                alignItems: 'center',
-              }}
-            >
-              <Burger
-                opened={opened}
-                onClick={() => setOpened((o) => !o)}
-                size="sm"
-                color={theme.colors.gray[6]}
-                mr="xl"
-              />
-            </div>
-            </div>
-          </Header>
-          }
         > 
-        */}
-
         <Component {...pageProps} />
-        {/* </AppShell> */}
+        </AppShell>
     </>
   );
 }

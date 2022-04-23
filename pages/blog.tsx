@@ -1,9 +1,11 @@
+import NavbarContent from "../components/NavbarContent";
+
 const Blog = () => {
-  return <h1
-    style={{  
-      color: 'white',
-    }}
-  >this is blog page</h1>
+  return (
+    <>
+     <NavbarContent />
+    </>
+  );
 }
 
 export default Blog;

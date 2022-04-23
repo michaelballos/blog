@@ -6,7 +6,6 @@ import NavbarContent from '../components/NavbarContent';
 const Home: NextPage = () => {
   return (
     <div>
-      <NavbarContent />
       <HomeContent />       
     </div>
   )
