@@ -2,6 +2,7 @@ import AboutNavbar from '../components/AboutNavbar';
 import { useRef } from 'react';
 import { Canvas, useFrame } from '@react-three/fiber';
 import { useScroll, ScrollControls, Scroll } from '@react-three/drei';
+import Arizona from '../components/Arizona';
 
 const Capsule = () => {
   const mesh = useRef();
@@ -66,7 +67,11 @@ const HtmlText = () => {
           </p>
         </div>
         <p className="pageFour">Altered</p>
-        <p className="pageFive">This is the fifth page</p>
+        <div className="pageFive">
+          <div className='pageFiveText'>
+            This is the fifth page
+          </div>
+        </div>
         <p className="pageSix">This is the sixth page</p>
         <p className="pageSeven">This is the seventh page</p>
         <p className="pageEight">This is the eigth page</p>
