@@ -84,8 +84,7 @@ const HtmlText = () => {
              A Sandbox
            </p> 
         </div> 
-        <p className="pageSeven">This is the seventh page</p>
-        <p className="pageEight">This is the eigth page</p>
+        <p className="pageSeven">For My Creative Process</p>
       </div>
     </Scroll>
   );

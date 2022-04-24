@@ -80,6 +80,16 @@ span {
     font-size: 15rem;
 }
 
+.pageSeven {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 13rem;
+    margin-bottom: 45vh;
+    padding-left: 10vw;
+}
+
 @media (max-width: 600px) {
     p,
     span {
