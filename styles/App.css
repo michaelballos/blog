@@ -54,21 +54,20 @@ span {
     justify-content: space-between;
     align-items: flex-end;
     font-size: 9vw;
-    width: 65vw;
-    margin-left: 23vw;
+    width: 80vw;
+    margin-left: 5vw;
 }
 
 .pageFour {
     font-size: 15vw;
 }
 
-.pageFive {
-    background-image: url('../public/aboutMe.png');
-    background-color: white;
+.pageSix {
+    background-image: url('../public/street.jpg');
     background-size: cover;
-    margin-left: 5vw;
-    width: 90vw;
-    height: 80vh;
+    margin-left: 10vw;
+    width: 80vw;
+    height: 100vh;
 }
 
 @media (max-width: 600px) {
@@ -97,7 +96,8 @@ span {
         font-size: 25vw;
     }
     .pageThree {
-        font-size: 22vw;
+        font-size: 10vw;
+        margin-left: 3rem;
     }
     .pageFour {
         font-size: 22vw;

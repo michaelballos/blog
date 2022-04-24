@@ -12,3 +12,19 @@
     gap: 30px;
     padding-left: 50px;
 }
+
+@media (max-width: 600px) {
+    .container {
+        display: flex;
+        align-items: center;
+        padding-top: 20px;
+        padding-left: 20px;
+        background-color: #1A1B1E;
+    }
+    .links {
+        width: 100%;
+        display: flex;
+        gap: 20px;
+        padding-left: 50px;
+    }
+}

@@ -2,30 +2,23 @@ import React from 'react';
 import type { NextPage } from 'next'
 import NavLogo from '../components/NavLogo';
 import HomeNavLinks from '../components/HomeNavLinks';
+import styles from '../styles/Home.module.css';
+import { Stack } from '@mantine/core';
 
 const Home: NextPage = () => {
   return (
-    <div>
+    <div className={styles.container}>
     <div
-      style={{
-        display: 'flex',
-        width: '24px',
-        paddingTop: '20px',
-        paddingLeft: '20px',
-      }} 
+      className={styles.logo}
     >
       <NavLogo />
     </div>
     <div
-      style={{
-        display: 'flex',
-        flexDirection: 'column',
-        paddingTop: '15rem',
-        paddingLeft: '10rem',
-        gap: '10px',
-      }}
+      className={styles.links}
     >
-      <HomeNavLinks />
+      <Stack>
+        <HomeNavLinks />
+      </Stack>
     </div>
     </div>
   )
