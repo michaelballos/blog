@@ -63,11 +63,21 @@ span {
 }
 
 .pageSix {
+    display: flex;
     background-image: url('../public/street.jpg');
     background-size: cover;
     margin-left: 10vw;
     width: 80vw;
-    height: 100vh;
+    height: 80vh;
+}
+
+.pageSixTextOne {
+    position: absolute;
+    color: rgb(5, 243, 215);
+    width: 100vw;
+    margin-top: 25vh;
+    left: 0;
+    font-size: 15rem;
 }
 
 @media (max-width: 600px) {
@@ -102,5 +112,12 @@ span {
     .pageFour {
         font-size: 22vw;
         font-weight: bold;
+    }
+    .pageSix {
+        background-image: url('../public/street.jpg');
+        background-size: cover;
+        margin-left: 10vw;
+        width: 50vw;
+        height: 20vh;
     }
 }

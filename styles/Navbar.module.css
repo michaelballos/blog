@@ -17,14 +17,14 @@
     .container {
         display: flex;
         align-items: center;
-        padding-top: 20px;
-        padding-left: 20px;
+        padding-top: 10px;
+        padding-left: 10px;
         background-color: #1A1B1E;
     }
     .links {
         width: 100%;
         display: flex;
-        gap: 20px;
+        gap: 10px;
         padding-left: 50px;
     }
 }

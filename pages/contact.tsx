@@ -2,7 +2,8 @@ import { NextPage } from 'next';
 import Head from 'next/head';
 import ContactNavbar from '../components/ContactNavbar';
 import ContactCard from '../components/ContactCard';
-import { Group, Center } from '@mantine/core';
+import { Stack, Center } from '@mantine/core';
+import styles from '../styles/ContactCard.module.css';
 
 const Contact: NextPage = () => {
   return (
@@ -13,12 +14,9 @@ const Contact: NextPage = () => {
       </Head>
       <ContactNavbar />
       <Center
-        style={{
-          display: 'flex',
-          paddingTop: '40vh',
-        }} 
-      > 
-      <Group>
+        className={styles.contactContainer} 
+      >
+      <Stack>
         <ContactCard
           title={'Email'}
           href={'mailto:ballos.michael@gmail.com'}
@@ -34,8 +32,8 @@ const Contact: NextPage = () => {
           href={'https://twitter.com/michael_ballos'}
           label={'@michael_ballos'}
         />
-      </Group>
-      </Center>
+      </Stack>
+     </Center>
     </>
   );
 };
