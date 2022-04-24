@@ -1,15 +1,19 @@
 .aboutContainer {
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
 }
 
 .App {
     background-color: black;
+    width: 100vw;
+    height: 100vh;
 }
 
 .scrollArea {
     height: 800vh;
     width: 100vw;
+    overflow: hidden;
 }
 
 p,
@@ -22,7 +26,7 @@ span {
 }
 
 .pageOne {
-    padding-top: 38rem;
+    padding-top: 45vh;
 }
 
 .pageTwo {
@@ -50,12 +54,20 @@ span {
     justify-content: space-between;
     align-items: flex-end;
     font-size: 9vw;
-    width: 65vw;
-    margin-left: 23vw;
+    width: 80vw;
+    margin-left: 5vw;
 }
 
 .pageFour {
     font-size: 15vw;
+}
+
+.pageSix {
+    background-image: url('../public/street.jpg');
+    background-size: cover;
+    margin-left: 10vw;
+    width: 80vw;
+    height: 100vh;
 }
 
 @media (max-width: 600px) {
@@ -84,7 +96,8 @@ span {
         font-size: 25vw;
     }
     .pageThree {
-        font-size: 22vw;
+        font-size: 10vw;
+        margin-left: 3rem;
     }
     .pageFour {
         font-size: 22vw;

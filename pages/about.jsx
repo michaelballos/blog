@@ -1,14 +1,24 @@
 import AboutNavbar from '../components/AboutNavbar';
-import { useRef } from 'react';
-import { Canvas, useFrame } from '@react-three/fiber';
-import { useScroll, ScrollControls, Scroll } from '@react-three/drei';
+import { useRef, Suspense } from 'react';
+import { Canvas, useFrame, useLoader } from '@react-three/fiber';
+import { useScroll, useFBX, ScrollControls, Scroll } from '@react-three/drei';
+
+
+
+const Cube = () => {
+  const mesh = useRef();
+  return (
+    <mesh ref={mesh}>
+      <boxGeometry attach="geometry" args={[1, 1, 1]} />
+    </mesh>
+  )
+};
 
 const Capsule = () => {
   const mesh = useRef();
   const data = useScroll();
 
   useFrame(() => {
-    console.log(data.scroll.current);
     // starting position
     mesh.current.position.y = 500;
     // pulls capsule towards camera
@@ -66,8 +76,15 @@ const HtmlText = () => {
           </p>
         </div>
         <p className="pageFour">Altered</p>
-        <p className="pageFive">This is the fifth page</p>
-        <p className="pageSix">This is the sixth page</p>
+        <p className="pageFive">
+          Who am I? 
+        </p>
+        <div className="pageSix">
+
+          <div className='pageSixText'>
+            Page Six
+          </div>
+        </div> 
         <p className="pageSeven">This is the seventh page</p>
         <p className="pageEight">This is the eigth page</p>
       </div>
