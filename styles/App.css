@@ -63,11 +63,31 @@ span {
 }
 
 .pageSix {
+    display: flex;
     background-image: url('../public/street.jpg');
     background-size: cover;
     margin-left: 10vw;
     width: 80vw;
-    height: 100vh;
+    height: 80vh;
+}
+
+.pageSixTextOne {
+    position: absolute;
+    color: rgb(5, 243, 215);
+    width: 100vw;
+    margin-top: 25vh;
+    left: 0;
+    font-size: 15rem;
+}
+
+.pageSeven {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 13rem;
+    margin-bottom: 45vh;
+    padding-left: 10vw;
 }
 
 @media (max-width: 600px) {
@@ -102,5 +122,34 @@ span {
     .pageFour {
         font-size: 22vw;
         font-weight: bold;
+    }
+    .pageFive {
+        font-size: 10vw;
+        margin-left: 2.5rem;
+    }
+    .pageSix {
+        display: flex;
+        background-image: url('../public/street.jpg');
+        background-size: cover;
+        margin-left: 3vw;
+        width: 94vw;
+        height: 50vh;
+    }
+    .pageSixTextOne {
+        position: absolute;
+        color: rgb(5, 243, 215);
+        width: 100vw;
+        margin-top: 20vh;
+        left: 0;
+        font-size: 3rem;
+    }
+    .pageSeven {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        font-size: 5rem;
+        margin-bottom: 45vh;
+        padding-left: 10vw;
     }
 }

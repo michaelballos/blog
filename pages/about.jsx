@@ -77,16 +77,14 @@ const HtmlText = () => {
         </div>
         <p className="pageFour">Altered</p>
         <p className="pageFive">
-          Who am I? 
+          This Website Is My Playground
         </p>
         <div className="pageSix">
-
-          <div className='pageSixText'>
-            Page Six
-          </div>
+          <p className='pageSixTextOne'>
+             A Sandbox
+           </p> 
         </div> 
-        <p className="pageSeven">This is the seventh page</p>
-        <p className="pageEight">This is the eigth page</p>
+        <p className="pageSeven">For My Creative Process</p>
       </div>
     </Scroll>
   );
